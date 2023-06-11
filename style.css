@@ -1,0 +1,38 @@
+body {
+    background-color: bisque;
+}
+
+h1 {
+    animation: colorchange1 5s infinite;
+}
+h2 {
+    animation: colorchange 5s infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: blueviolet;
+    }
+    
+    50% {
+        color: pink;
+    }
+
+    100% {
+        color: darkmagenta;
+    }
+}
+
+@keyframes colorchange1 {
+    0% {
+        color: lightgreen;
+    }
+
+    50% {
+        color: chartreuse;
+    }
+
+    100% {
+        color: green;
+    }
+}
