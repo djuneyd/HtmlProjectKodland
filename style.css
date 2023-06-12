@@ -118,13 +118,20 @@
 
 .page2 h2 {
     font-size: 55px;
-    background-color: rgb(247, 189, 255);
     padding: 150px 30px;
     border-radius: 25px;
     animation: page2-appetit-color-change 3s infinite;
 }
 .page2 img:last-child {
     margin-left: 30px;
+}
+.page2 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+    animation: page1-recipes-color-change 3s infinite;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 @keyframes page2-back-color-change {
@@ -148,5 +155,122 @@
     }
     100% {
         background-color: rgb(247, 189, 255);
+    }
+}
+
+/* PAGE3 */
+#page3 {
+    animation:page3-back-color-change 3s infinite;
+    font-family: 'Courier New', Courier, monospace;
+}
+.zezar img:first-child{
+    width: 650px;
+    border-radius: 25px;
+}
+.zezar img:last-child {
+    margin-left: 30px;
+}
+
+.zezar table ul{
+    font-size: 25px;
+    padding: 20px 50px;
+    margin-left: 30px ;
+    border-radius: 25px;
+    background-color: rgb(133, 255, 121);
+}
+
+.zezar table {
+    margin: auto;
+}
+
+.zezar table h2 {
+    font-size: 55px;
+    padding: 150px 30px;
+    border-radius: 25px;
+    animation: page3-appetit-color-change 3s infinite;
+}
+
+.zezar a {
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+    animation: page1-recipes-color-change 3s infinite;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@keyframes page3-appetit-color-change {
+    0% {
+        background-color: rgb(249, 255, 158);
+    }
+    50% {
+        background-color: rgb(244, 255, 88);
+    }
+    100% {
+        background-color: rgb(249, 255, 158);
+    }
+}
+
+@keyframes page3-back-color-change {
+    0% {
+        background-color: rgb(168, 249, 255);
+    }
+    50% {
+        background-color: rgb(95, 244, 255);
+    }
+    100% {
+        background-color: rgb(168, 249, 255);
+    }
+}
+
+/* PAGE4 */
+#page4 {
+    animation: page4-back-color-change 3s infinite;
+    font-family: 'Courier New', Courier, monospace;
+}
+.page4-content table {
+    margin: auto;
+}
+
+.page4-content img:first-child {
+    width: 450px ;
+    border-radius: 25px;
+}
+
+.page4-content img:last-child {
+    margin-top: 30px;
+    margin-left: 250px;
+}
+
+.page4-content ul {
+    font-size: 25px;
+    margin-left: 250px;
+    list-style: square;
+    padding: 20px 50px;
+    border-radius: 25px;
+    animation:page4-recipe-color-change 3s infinite ;
+}
+
+@keyframes page4-back-color-change {
+    0% {
+        background-color: rgb(245, 255, 197);
+    }
+    50% {
+        background-color: rgb(232, 255, 117);
+    }
+    100% {
+        background-color: rgb(245, 255, 197);
+    }
+}
+
+@keyframes page4-recipe-color-change {
+    0% {
+        background-color: rgb(255, 197, 197);
+    }
+    50% {
+        background-color: rgb(255, 117, 117);
+    }
+    100% {
+        background-color: rgb(255, 197, 197);
     }
 }
