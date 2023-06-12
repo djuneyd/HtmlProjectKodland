@@ -1,38 +1,152 @@
-body {
-    background-color: bisque;
+/* PAGE 1 */
+.page1 {
+    animation: page1-back-color-change 3s infinite;
+    font-family:'Courier New', Courier, monospace;
+}
+.page1 h1 {
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px 10px;
+    border-radius: 25px;
+    animation: page1-topic-color-change 3s infinite;
+} 
+
+.page1 h2 {
+    margin-left: 1600px;
 }
 
-h1 {
-    animation: colorchange1 5s infinite;
-}
-h2 {
-    animation: colorchange 5s infinite;
+.page1 a {
+    font-size: 30px;
+    letter-spacing: 4px;
+    color: rgb(0, 142, 152);
+    text-decoration: none;
+    padding: 20px 10px;
+    border-radius: 25px;
+    animation:page1-recipes-color-change 3s infinite ;
 }
 
-@keyframes colorchange {
+.page1 ol {
+    text-align: center;
+    list-style: none;
+    margin-top: 70px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.page1 li {
+    margin-bottom: 100px ;
+}
+
+.page1 form {
+    margin-left: 1500px ;
+}
+.page1 input,
+.page1 textarea {
+    color: transparent;
+    display: block;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+    color: black;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    outline: none;
+}
+
+@keyframes page1-recipes-color-change {
     0% {
-        color: blueviolet;
+        background-color: rgb(171, 255, 227);
     }
-    
     50% {
-        color: pink;
+        background-color: rgb(43, 198, 255)
     }
-
     100% {
-        color: darkmagenta;
+        background-color: rgb(171, 255, 227);
     }
 }
 
-@keyframes colorchange1 {
+@keyframes page1-topic-color-change {
     0% {
-        color: lightgreen;
+        background-color: rgb(253, 207, 254);
     }
-
     50% {
-        color: chartreuse;
+        background-color: rgb(207, 34, 255);
     }
-
     100% {
-        color: green;
+        background-color: rgb(253, 207, 254);
+    }
+}
+
+@keyframes page1-back-color-change {
+    0% {
+        background-color: antiquewhite;
+    }
+    50% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: antiquewhite;
+    }
+}
+
+
+/* PAGE2 */
+.page2 {
+    animation: page2-back-color-change 3s infinite;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.page2 img {
+    width: 650px;
+    border-radius: 25px ;
+}
+
+.page2 ul {
+    font-size: 25px;
+    background-color: beige;
+    padding: 20px 50px;
+    margin-left: 30px ;
+    border-radius: 25px;
+}
+
+.page2 table {
+    margin: auto;
+}
+
+.page2 h2 {
+    font-size: 55px;
+    background-color: rgb(247, 189, 255);
+    padding: 150px 30px;
+    border-radius: 25px;
+    animation: page2-appetit-color-change 3s infinite;
+}
+.page2 img:last-child {
+    margin-left: 30px;
+}
+
+@keyframes page2-back-color-change {
+    0% {
+        background-color: rgb(169, 255, 170);
+    }
+    50% {
+        background-color: rgb(113, 255, 115);
+    }
+    100% {
+        background-color: rgb(169, 255, 170);
+    }
+}
+
+@keyframes page2-appetit-color-change {
+    0% {
+        background-color: rgb(247, 189, 255);
+    }
+    50% {
+        background-color: rgb(241, 135, 255);
+    }
+    100% {
+        background-color: rgb(247, 189, 255);
     }
 }
