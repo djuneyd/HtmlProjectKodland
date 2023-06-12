@@ -230,6 +230,7 @@
 }
 .page4-content table {
     margin: auto;
+    margin-right: 300px;
 }
 
 .page4-content img:first-child {
@@ -249,6 +250,22 @@
     padding: 20px 50px;
     border-radius: 25px;
     animation:page4-recipe-color-change 3s infinite ;
+}
+
+.page4-content table h2 {
+    font-size: 55px;
+    padding: 150px 30px;
+    border-radius: 25px;
+    animation: page4-appetit-color-change 3s infinite;
+
+}
+.page4-content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+    animation: page1-recipes-color-change 3s infinite;
+    padding: 10px;
+    border-radius: 25px;
 }
 
 @keyframes page4-back-color-change {
@@ -272,5 +289,17 @@
     }
     100% {
         background-color: rgb(255, 197, 197);
+    }
+}
+
+@keyframes page4-appetit-color-change {
+    0% {
+        background-color: rgb(255, 151, 224);
+    }
+    50% {
+        background-color: rgb(255, 92, 206);
+    }
+    100% {
+        background-color: rgb(255, 151, 224);
     }
 }
