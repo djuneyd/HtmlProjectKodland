@@ -240,12 +240,10 @@
 
 .page4-content img:last-child {
     margin-top: 30px;
-    margin-left: 250px;
 }
 
 .page4-content ul {
     font-size: 25px;
-    margin-left: 250px;
     list-style: square;
     padding: 20px 50px;
     border-radius: 25px;
@@ -301,5 +299,88 @@
     }
     100% {
         background-color: rgb(255, 151, 224);
+    }
+}
+
+/* PAGE5 */
+
+#page5 {
+    animation: page5-back-color-change 3s infinite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.page5-content table {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.page5-content img:first-child {
+    width: 650px;
+    border-radius: 25px;
+
+}
+
+.page5-content ul {
+    font-size: 25px;
+    padding: 20px 50px;
+    border-radius: 25px;
+    animation:page5-recipe-color-change 3s infinite ;
+}
+
+.page5-content table h2 {
+    font-size: 55px;
+    padding: 150px 30px;
+    border-radius: 25px;
+    animation: page5-recipe-color-change 3s infinite;
+}
+
+.page5-content a {
+    font-size: 20px;
+    text-decoration: none;
+    color: blue;
+    animation: page1-recipes-color-change 3s infinite;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@keyframes page5-back-color-change {
+    0% {
+        background-color: rgb(255, 187, 151);
+    }
+    50% {
+        background-color: rgb(255, 140, 78);
+    }
+    100% {
+        background-color: rgb(255, 187, 151);
+    }
+}
+
+@keyframes page5-recipe-color-change {
+    0% {
+        background-color: rgb(255, 251, 179);
+    }
+    50% {
+        background-color: rgb(255, 246, 78);
+    }
+    100% {
+        background-color: rgb(255, 251, 179);
+    }
+}
+
+/* PAGE6 */
+
+#page6 {
+    animation: page6-back-color-change 3s infinite;
+}
+
+@keyframes page6-back-color-change {
+    0% {
+        background-color: rgb(200, 140, 107);
+    }
+    50% {
+        background-color: rgb(165, 106, 73);
+    }
+    100% {
+        background-color: rgb(200, 140, 107);
     }
 }
